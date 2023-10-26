@@ -1,16 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
+    <!-- Teks Pertanyaan Emosi -->
     <TextView
+        android:id="@+id/textViewQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtHome"
-        android:text="Ini halaman home"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:gravity="center"
-        android:layout_marginTop="250dp"/>
+        android:text="Bagaimana perasaan Anda hari ini?"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Pilihan Emosi (gunakan Spinner atau EditText) -->
+    <Spinner
+        android:id="@+id/spinnerEmotions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewQuestion"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Daftar Gambar Emosi (gunakan RecyclerView atau GridView) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewEmotions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerEmotions"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tombol Submit -->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/recyclerViewEmotions"
+        android:background="@drawable/rounded_buttonorange"/>
+
+    <!-- Tampilan Hasil (opsional) -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSubmit"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+
 
 </RelativeLayout>
