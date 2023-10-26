@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:hint="Apa yang Anda pikirkan?"
         android:textSize="18sp"
-        android:background="@android:color/transparent"
+        android:background="@drawable/rounded_edittext"
         android:padding="8dp" />
 
     <!-- Tombol "Post" -->
@@ -21,9 +21,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editTextStatus"
         android:layout_alignParentEnd="true"
-        android:background="@color/Orange"
-        android:backgroundTint="#FE8235"
+        android:background="@drawable/rounded_button"
         android:padding="12dp"
+        android:layout_marginTop="4dp"
         android:text="Post" />
 
     <!-- Daftar Postingan -->
