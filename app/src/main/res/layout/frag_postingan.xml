@@ -23,7 +23,7 @@
         android:layout_alignParentEnd="true"
         android:background="@drawable/rounded_buttonorange"
         android:padding="12dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:text="Post" />
 
     <!-- Daftar Postingan -->
