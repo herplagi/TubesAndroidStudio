@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-
+    <!-- Tombol Kembali -->
     <Button
         android:id="@+id/buttonback"
         android:layout_width="wrap_content"
@@ -12,8 +12,53 @@
         android:text="◀"
         android:textSize="30dp"
         android:background="@color/Orange"
-        android:onClick="backtoprofil"
-    />
+        android:onClick="backtoprofil" />
 
+    <!-- Edit Gambar Profil -->
+    <ImageView
+        android:id="@+id/edit_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonback"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/fotogilang" />
 
+    <!-- Tombol untuk Mengganti Gambar Profil -->
+    <Button
+        android:id="@+id/change_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_profile_image"
+        android:layout_centerHorizontal="true"
+        android:text="Ganti Gambar Profil"
+        android:layout_marginTop="16dp" />
+
+    <!-- Edit Nama Pengguna -->
+    <EditText
+        android:id="@+id/edit_profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit Nama Pengguna"
+        android:layout_below="@+id/change_image_button"
+        android:layout_marginTop="16dp" />
+
+    <!-- Edit Deskripsi Profil -->
+    <EditText
+        android:id="@+id/edit_profile_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit Deskripsi Profil"
+        android:layout_below="@+id/edit_profile_name"
+        android:layout_marginTop="16dp" />
+
+    <!-- Tombol Simpan -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan Perubahan"
+        android:layout_below="@+id/edit_profile_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
 </RelativeLayout>
