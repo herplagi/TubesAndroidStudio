@@ -7,12 +7,12 @@
 
     <item
         android:id="@+id/menu_posting"
-        android:icon="@drawable/baseline_note_add_24"
+        android:icon="@drawable/baseline_diversity_3_24"
         android:title=""/>
 
     <item
         android:id="@+id/menu_chat"
-        android:icon="@drawable/baseline_chat_bubble_24"
+        android:icon="@drawable/baseline_chat_24"
         android:title=""/>
 
     <item
