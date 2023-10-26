@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Input teks status -->
+    <EditText
+        android:id="@+id/editTextStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apa yang Anda pikirkan?"
+        android:textSize="18sp"
+        android:background="@android:color/transparent"
+        android:padding="8dp" />
+
+    <!-- Tombol "Post" -->
+    <Button
+        android:id="@+id/buttonPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextStatus"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="#2CBA1F"
+        android:padding="12dp"
+        android:text="Post" />
+
+    <!-- Daftar Postingan -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPostings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonPost"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

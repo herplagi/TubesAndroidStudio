@@ -10,8 +10,8 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/fotogilang"
-        android:layout_marginTop="32dp" />
+        android:layout_marginTop="32dp"
+        android:src="@drawable/fotogilang" />
 
     <!-- Nama Pengguna -->
     <TextView
@@ -44,9 +44,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/profile_description"
         android:layout_centerHorizontal="true"
+        android:onClick="editprofil"
         android:text="Edit Profil"
         android:layout_marginTop="16dp"
         android:background="@color/colorPrimary"
         android:textColor="@color/white" />
+    \
 
 </RelativeLayout>
