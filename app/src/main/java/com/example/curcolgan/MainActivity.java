@@ -17,24 +17,26 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(MenuItem item) {
             Fragment f = null;
-            switch (item.getItemId()) {
-                case R.id.menu_home:
-                    f = new FragHome();
-                    break;
-                case R.id.menu_posting:
-                    f = new FragPostingan();
-                    break;
-                case R.id.menu_chat:
-                    f = new FragChat();
-                    break;
-                case R.id.menu_profile:
-                    f = new FragProfile();
-                    break;
+            int itemId = item.getItemId();
+
+            if (itemId == R.id.menu_home) {
+                f = new FragHome();
+            } else if (itemId == R.id.menu_posting) {
+                f = new FragPostingan();
+            } else if (itemId == R.id.menu_chat) {
+                f = new FragChat();
+            } else if (itemId == R.id.menu_profile) {
+                f = new FragProfile();
             }
-            getSupportFragmentManager().beginTransaction().replace(R.id.container_frag, f).commit();
+
+            if (f != null) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.container_frag, f).commit();
+            }
+
             return true;
         }
     };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
