@@ -6,13 +6,14 @@
 
     <!-- Tombol Kembali -->
     <Button
-        android:id="@+id/buttonback"
+        android:id="@+id/back_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="◀"
+        android:text="back"
         android:textSize="30dp"
         android:background="@color/Orange"
         android:onClick="backtoprofil" />
+
 
     <!-- Edit Gambar Profil -->
     <ImageView
@@ -20,9 +21,10 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/buttonback"
+        android:layout_below="@+id/back_button"
         android:layout_marginTop="16dp"
-        android:src="@drawable/fotogilang" />
+        android:src="@drawable/fotogilang"
+        />
 
     <!-- Tombol untuk Mengganti Gambar Profil -->
     <Button
